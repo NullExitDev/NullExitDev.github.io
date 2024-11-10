@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+em {
+    font-style: normal;
+}
+
+input {
+    outline: none;
+}
+
+body {
+    background: -webkit-linear-gradient(90deg, #09090c, #1a1b23);
+    background: linear-gradient(90deg, #09090c, #1a1b23);
+}

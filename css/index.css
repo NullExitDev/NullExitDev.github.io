@@ -1,0 +1,189 @@
+@media screen and (max-width:500px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:500px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@font-face {
+    font-family: 'FengYaHei';
+    src: url("../asstes/fonts/爱点风雅黑.ttf");
+}
+
+.nav-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #15151507;
+    border-bottom: .1rem solid #ffffff50;
+    backdrop-filter: blur(10px);
+    z-index: 99;
+}
+
+.nav-box .nav-left-box {
+    float: left;
+    margin-left: 1rem;
+    width: 11rem;
+    height: 100%;
+    font-family: 'FengYaHei';
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.nav-box .nav-logo {
+    float: left;
+}
+
+.nav-box .nav-left-box .iconfont {
+    font-size: 1.7rem;
+    float: left;
+}
+
+.nav-box .nav-right-box {
+    float: right;
+    margin-top: .7rem;
+    margin-right: 1rem;
+    width: 3.5rem;
+    height: 1.6rem;
+    font-size: .6rem;
+    border: .1rem solid #fff;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #fff;
+}
+
+.header-box {
+    margin: 5.5rem auto 0;
+    width: 18rem;
+    height: 8rem;
+    z-index: 1;
+}
+
+.header-box .h-top-box {
+    margin: 0 auto;
+    width: 10rem;
+    height: 2rem;
+    font-size: .85rem;
+    text-align: center;
+    line-height: 1.8rem;
+    color: #fff;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 0 15px 5px rgba(0, 0, 0, .5);
+    white-space: nowrap;
+}
+
+.header-box .h-footer-box {
+    margin-top: .8rem;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.header-box .h-footer-box .h-f-title {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.header-box .h-footer-box .h-f-info {
+    margin-top: .5rem;
+    font-size: .8rem;
+    color: #c5c2c2;
+    font-weight: lighter;
+}
+
+.banner-box {
+    position: relative;
+    margin: 4.5rem auto;
+    width: 30rem;
+    height: 15rem;
+    border-radius: 1rem;
+    background-color: #111218;
+    box-shadow: 0 0 1rem .5rem rgba(0, 0, 0, .4);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.banner-box::after {
+    position: absolute;
+    content: '';
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    /* backdrop-filter: blur(5px); */
+    background: conic-gradient(transparent 70%, #ffffffe6, transparent);
+    animation: rota 4s linear infinite;
+}
+
+.banner-box::before {
+    position: absolute;
+    content: '';
+    inset: .3rem;
+    background: url("../asstes/img/banner.jpg") no-repeat;
+    background-size: cover;
+    border-radius: inherit;
+    z-index: 1;
+}
+
+.banner-box .b-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    letter-spacing: .3rem;
+    white-space: nowrap;
+    color: #fff;
+    z-index: 99;
+}
+
+.banner-box .b-mask {
+    position: absolute;
+    inset: .3rem;
+    border-radius: 1rem;
+    z-index: 5;
+    /* background-color: rgba(0, 0, 0, .4); */
+    backdrop-filter: blur(5px);
+}
+
+.particle_background {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.particle_background .particle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@keyframes rota {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
